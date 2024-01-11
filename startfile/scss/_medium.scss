@@ -1,1 +1,10 @@
 /* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display: flex;
+
+        li a {
+            border: none;
+        }
+    }
+}
