@@ -18,11 +18,12 @@ body {
   font-family: $bodyFont;
   font-weight: $normalWeight;
   color: $fontColor;
+  background-color: rgb(249, 243, 234);
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: $secondaryColor;
+  background-color: $primaryColor;
+  color: $fontColor;
 }
 header {
   display: flex;
@@ -39,7 +40,7 @@ header {
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: $secondaryColor;
 }
 nav {
   padding: 0;
@@ -55,18 +56,57 @@ nav {
     color: black;
 
     &:hover {
-      color: green;
+      background-color: gainsboro;
     }
   }
   a.active {
-    background-color: gainsboro;
+    background-color: $primaryColor;
   }
 }
 
+// main stuff 
+main {
+  margin-inline:$gutter ;
+  margin-block: 2vh;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gutter;
+  justify-content: center;
+}
+
+.cards>div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 388px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  .deets {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-block: 5px;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
 
 // begin the footer
 #footerWrapper {
-    background-color: thistle;
+    background-color:$primaryColor;
 }
 footer {
     padding: .5rem $gutter;
