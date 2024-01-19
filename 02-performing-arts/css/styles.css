@@ -435,10 +435,16 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  .cards {
+    gap: 2rem;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  main {
+    margin: 2vh auto;
   }
 }
