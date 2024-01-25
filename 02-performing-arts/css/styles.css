@@ -447,4 +447,7 @@ footer p {
   main {
     margin: 2vh auto;
   }
+  .cards > div {
+    max-width: 298px;
+  }
 }
