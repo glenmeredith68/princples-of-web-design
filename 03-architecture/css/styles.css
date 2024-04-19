@@ -374,6 +374,25 @@ nav a.active {
   background-color: gainsboro;
 }
 
+main {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 0.5rem 16px;
+}
+details summary {
+  background-color: thistle;
+  padding: 1rem;
+  border-radius: 6px;
+  display: inline;
+}
+
 #footerWrapper {
   background-color: thistle;
 }

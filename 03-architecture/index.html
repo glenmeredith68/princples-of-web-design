@@ -6,9 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.min.css" />
 
     <!-- favicon stuff -->
@@ -22,7 +25,7 @@
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="images/logo.png" alt="logo" width="40" height="40">
+        <img src="images/logo.png" alt="logo" width="40" height="40" />
         <h1>Glen Meredith</h1>
       </header>
     </div>
@@ -36,6 +39,40 @@
     <div id="mainWrapper">
       <main>
         <h2>Learn</h2>
+        <video id="video" controls>
+          <source src="media/trashcan.mp4" type="video/mp4" />
+          <source src="media/trashcan.webm" type="video/webm" />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="media/glen-en.vtt"
+            default
+          />
+          <track
+            label="Español"
+            kind="subtitles"
+            srclang="es"
+            src="media/glen-sp.vtt"
+          />
+        </video>
+        <details>
+          <summary>Video Transcript</summary>
+          <p>
+            Hey mey have you heard about the new trash can Mac? No, what's that?
+            It's the newest innovation in kitchen technology! Instead of just
+            being a regular trash can, it's also a fully functioning Mac
+            computer. It's sleek, stylish, and super practical: you can throw
+            away your trash while checking your emails browsing the web and
+            composting your kitchen scraps. Wow that sounds incredible
+            incredibly convenient too. But won't it get dirty? Not at all, the
+            trash can Mac is designed with a durable, easy to clean exterior so
+            you can keep it looking pristine even in the messiest of kitchens. I
+            bet it's great for saving space too. It is; just look at that space
+            gray. With the trash can Mac you can declutter your kitchen while
+            staying connected and productive.
+          </p>
+        </details>
       </main>
     </div>
     <div id="footerWrapper">

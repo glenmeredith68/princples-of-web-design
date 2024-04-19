@@ -63,6 +63,21 @@ nav {
   }
 }
 
+main {
+  width: 100%;
+}
+video {
+  width: 100%;
+  margin-left: 5%;
+}
+details { margin: .5rem $gutter;
+  summary {
+    background-color: thistle;
+    padding: 1rem;
+    border-radius: 6px;
+    display: inline;
+  }
+}
 
 // begin the footer
 #footerWrapper {
