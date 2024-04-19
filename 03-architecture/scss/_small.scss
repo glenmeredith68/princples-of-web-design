@@ -64,18 +64,21 @@ nav {
 }
 
 main {
+  padding: .5rem;
   width: 100%;
 }
 video {
-  width: 100%;
-  margin-left: 5%;
+  max-width: 100%;
+  padding: .5rem;
 }
 details { margin: .5rem $gutter;
   summary {
     background-color: thistle;
     padding: 1rem;
+    margin: 1rem;
     border-radius: 6px;
-    display: inline;
+    text-align: center;
+    display: block;
   }
 }
 

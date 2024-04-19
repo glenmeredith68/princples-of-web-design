@@ -26,7 +26,7 @@
     <div id="headerWrapper">
       <header>
         <img src="images/logo.png" alt="logo" width="40" height="40" />
-        <h1>Glen Meredith</h1>
+        <h1>Glen's Architecture</h1>
       </header>
     </div>
     <div id="navWrapper">
@@ -38,7 +38,14 @@
     </div>
     <div id="mainWrapper">
       <main>
-        <h2>Learn</h2>
+        <picture>
+          <source media="(max-width: 699)" srcset="./images/building-small.webp">
+          <source media="(min-width: 700)" srcset="./images/building-medium.webp">
+          <source media="(min-width: 1100)" srcset="./images/building-large.webp">
+          <img src="images/building-large.jpg" alt="Fancy White Building" title="Photo by Lance Anderson on Unsplash">
+        </picture>
+        <h2>New Trashcan Architecture Video</h2>
+        <h4>With Captions!</h4>
         <video id="video" controls>
           <source src="media/trashcan.mp4" type="video/mp4" />
           <source src="media/trashcan.webm" type="video/webm" />
