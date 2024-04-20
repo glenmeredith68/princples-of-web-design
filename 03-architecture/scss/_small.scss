@@ -45,6 +45,7 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 
   a {
     flex: 1;

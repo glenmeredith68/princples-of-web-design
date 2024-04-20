@@ -1,4 +1,7 @@
 header, nav, main, footer {
-  max-width: 65rem;
+  max-width: 100rem;
   margin: auto;
+}
+nav {
+  justify-content: right;
 }

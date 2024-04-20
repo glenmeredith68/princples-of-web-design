@@ -4,3 +4,7 @@ header {
         font-size: 2rem;
     }
 }
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
