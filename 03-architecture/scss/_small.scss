@@ -56,7 +56,7 @@ nav {
     color: black;
 
     &:hover {
-      color: green;
+      text-decoration: underline wavy 3px $secondaryColor;
     }
   }
   a.active {

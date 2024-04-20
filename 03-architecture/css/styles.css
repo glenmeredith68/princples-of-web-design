@@ -369,7 +369,8 @@ nav a {
   color: black;
 }
 nav a:hover {
-  color: green;
+  -webkit-text-decoration: underline wavy 3px rgb(100, 73, 73);
+          text-decoration: underline wavy 3px rgb(100, 73, 73);
 }
 nav a.active {
   background-color: gainsboro;
@@ -432,6 +433,10 @@ footer p {
   header, nav, main, footer {
     max-width: 100rem;
     margin: auto;
+  }
+  nav a {
+    text-align: right;
+    max-width: 100px;
   }
   nav {
     justify-content: right;
