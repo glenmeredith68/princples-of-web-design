@@ -379,6 +379,12 @@ main {
   width: 100%;
 }
 
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 video {
   max-width: 100%;
   padding: 0.5rem;
@@ -419,7 +425,7 @@ footer p {
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 60rem;
+    max-width: 65rem;
     margin: auto;
   }
 }

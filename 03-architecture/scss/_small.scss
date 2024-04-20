@@ -64,14 +64,20 @@ nav {
 }
 
 main {
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
+}
+.hero img{
+  display: block;
+ width: 100%;
+ height: auto;
 }
 video {
   max-width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-details { margin: .5rem $gutter;
+details {
+  margin: 0.5rem $gutter;
   summary {
     background-color: thistle;
     padding: 1rem;
@@ -84,14 +90,14 @@ details { margin: .5rem $gutter;
 
 // begin the footer
 #footerWrapper {
-    background-color: thistle;
+  background-color: thistle;
 }
 footer {
-    padding: .5rem $gutter;
+  padding: 0.5rem $gutter;
 
-    p {
-        margin: 0;
-        font-weight: $lightWeight;
-        text-align: center;
-    }
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+  }
 }
