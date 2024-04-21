@@ -359,12 +359,14 @@ header h1 {
   background: transparent;
   border: none;
   font-size: 2rem;
-  padding: 0.3rem;
+  padding: 0.3rem 0;
+  margin-left: 16px;
 }
 
 nav {
   padding: 0;
   margin: 0;
+  padding-right: 16px;
   display: none;
   flex-direction: column;
 }
@@ -391,11 +393,15 @@ nav a.active {
   display: flex;
 }
 
+h2 {
+  padding-left: 16px;
+}
+
 .cardsWrapper {
   padding: 0 16px;
 }
 .cardsWrapper section {
-  border: 12px solid red;
+  border: 6px solid thistle;
   border-radius: 6px;
   overflow: hidden;
   margin: 1rem 0;
@@ -516,6 +522,14 @@ footer .legal {
   }
   #navWrapper button {
     display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: right;
+  }
+  nav a {
+    max-width: -moz-min-content;
+    max-width: min-content;
   }
   nav, nav.open {
     flex-direction: row;

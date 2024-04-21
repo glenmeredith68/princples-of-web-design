@@ -47,12 +47,14 @@ header {
     background: transparent;
     border: none;
     font-size: 2rem;
-    padding: 0.3rem;
+    padding: .3rem 0;
+    margin-left: $gutter;
   }
 }
 nav {
   padding: 0;
   margin: 0;
+padding-right: $gutter;
   display: none;
   flex-direction: column;
 
@@ -82,10 +84,14 @@ nav {
   display: flex;
 }
 
+h2 {
+  padding-left: $gutter;
+}
+
 .cardsWrapper {
   padding: 0 $gutter;
   section {
-    border: 12px solid red;
+    border: 6px solid $secondaryColor;
     border-radius: 6px;
     overflow: hidden;
     margin: 1rem 0;

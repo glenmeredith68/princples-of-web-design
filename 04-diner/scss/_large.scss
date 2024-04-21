@@ -6,6 +6,13 @@ header, nav, main, footer {
 #navWrapper button {
   display: none;
 }
+nav {
+  display: flex;
+  justify-content: right;
+  a {
+    max-width: min-content;
+  }
+}
 
 nav, nav.open {
 flex-direction: row;
