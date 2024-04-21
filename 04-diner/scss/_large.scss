@@ -2,3 +2,24 @@ header, nav, main, footer {
   max-width: 60rem;
   margin: auto;
 }
+
+#navWrapper button {
+  display: none;
+}
+
+nav, nav.open {
+flex-direction: row;
+  a {
+    border: none;
+  }
+}
+
+.cardsWrapper {
+  section {
+      flex-basis: calc(33.333% - ($gutter * 2 / 3));
+  }
+}
+
+footer div {
+  grid-template-columns: auto auto auto;
+}

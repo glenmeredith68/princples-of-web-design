@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://css.gg/css");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -352,6 +353,7 @@ header h1 {
 
 #navWrapper {
   background-color: thistle;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 }
 #navWrapper button {
   background: transparent;
@@ -363,7 +365,7 @@ header h1 {
 nav {
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 nav a {
@@ -378,8 +380,56 @@ nav a {
 nav a:hover {
   background-color: #d0b2d0;
 }
+nav a:first-of-type {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+}
 nav a.active {
   background-color: #c199c1;
+}
+
+.open {
+  display: flex;
+}
+
+.cardsWrapper {
+  padding: 0 16px;
+}
+.cardsWrapper section {
+  border: 12px solid red;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.cardsWrapper section h3,
+.cardsWrapper section p,
+.cardsWrapper section img {
+  margin: 0;
+  padding: 1rem 16px;
+}
+.cardsWrapper section h3 {
+  background-color: #abc;
+  font-size: 1.5rem;
+}
+.cardsWrapper section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cardsWrapper section .e2e {
+  padding: 0;
+}
+.cardsWrapper section p {
+  font-style: italic;
+}
+.cardsWrapper section a {
+  display: block;
+  background-color: #abc;
+  padding: 0.75rem;
+  text-align: center;
+  margin: 0 3rem 1rem 3rem;
+  border-radius: 6px;
+  color: black;
+  text-decoration: none;
 }
 
 #footerWrapper {
@@ -389,7 +439,50 @@ nav a.active {
 footer {
   padding: 0.5rem 16px;
 }
-footer p {
+footer section.contact p {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+footer section.contact p:hover {
+  color: #737373;
+}
+footer section.contact p a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+footer section.contact p a:hover {
+  color: #737373;
+}
+footer section.contact p a span {
+  display: block;
+}
+footer section.social {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+footer section.social a {
+  display: block;
+  font-size: 2rem;
+  --ggs:1.5;
+  color: #333;
+  padding: 1rem 0;
+}
+footer section.social a:nth-child(4) {
+  padding: 0.5rem;
+}
+footer section.social a:hover {
+  color: #737373;
+}
+footer section.location {
+  font-size: 1.2rem;
+}
+footer .legal {
   margin: 0;
   font-weight: 300;
   text-align: center;
@@ -402,10 +495,38 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  .cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cardsWrapper section {
+    flex-basis: calc(50% - 8px);
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  #navWrapper button {
+    display: none;
+  }
+  nav, nav.open {
+    flex-direction: row;
+  }
+  nav a, nav.open a {
+    border: none;
+  }
+  .cardsWrapper section {
+    flex-basis: calc(33.333% - 10.6666666667px);
+  }
+  footer div {
+    grid-template-columns: auto auto auto;
   }
 }

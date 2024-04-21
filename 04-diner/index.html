@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.min.css" />
+    <link href="https://css.gg/css" rel="stylesheet" />
 
     <!-- favicon stuff -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -25,12 +26,12 @@
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="images/logo.png" alt="logo" width="40" height="40">
+        <img src="images/logo.png" alt="logo" width="40" height="40" />
         <h1>Glen Meredith</h1>
       </header>
     </div>
     <div id="navWrapper">
-      <button>&#9776;</button>
+      <button id="ham">&#9776;</button>
       <nav>
         <a class="active" href="#">Learn</a>
         <a href="#">Practice</a>
@@ -40,11 +41,91 @@
     <div id="mainWrapper">
       <main>
         <h2>Learn</h2>
+        <div class="cardsWrapper">
+          <section>
+            <h3>Title</h3>
+            <img
+              src="images/jerome-jome-ElvU9T6-b0M-unsplash.jpg"
+              alt="Food"
+              width="300"
+              height="175"
+            />
+            <p>This is some food that you could eat.</p>
+            <a href="#">Eat Now</a>
+          </section>
+          <section>
+            <h3>Title</h3>
+            <img
+              src="images/xiong-gordon-92cbgFLSPN4-unsplash.jpg"
+              alt="Food"
+              width="300"
+              height="175"
+              class="e2e"
+            />
+            <p>This is some sustenance that you could consume.</p>
+            <a href="#">Eat Now</a>
+          </section>
+          <section>
+            <img
+            src="images/timothy-l-brock-WJ5mej6mWi4-unsplash.jpg"
+            alt="Food"
+            width="300"
+            height="175"
+            />
+            <h3>Title</h3>
+            <p>This is some food that you have to eat at least once in your life.</p>
+            <a href="#">Eat Now</a>
+          </section>
+          <section>
+            <img
+            src="images/ruthy-yang-AjqhHqmDMqQ-unsplash.jpg"
+            alt="Food"
+            width="300"
+            height="175"
+            class="e2e"
+            />
+            <h3>Title</h3>
+            <p>This is some food that you could eat in your mouth.</p>
+            <a href="#">Eat Now</a>
+          </section>
+          <section>
+            <img
+              src="images/peijia-li-AIWSvNU38H8-unsplash.jpg"
+              alt="Food"
+              width="300"
+              height="175"
+            />
+            <p>This is some spicy stuff that you could eat.</p>
+            <a href="#">Eat Now</a>
+          </section>
+        </div>
       </main>
     </div>
     <div id="footerWrapper">
       <footer>
-        <p>© <span id="year">2024</span> • Glen Meredith</p>
+        <div>
+          <section class="contact">
+            <p><gg-icon class="gg-user"></gg-icon><span>Tim Berners-Lee</span></p>
+            <p><gg-icon class="gg-home"></gg-icon><span>CERN, LLC</span></p>
+            <p><a href="mailto:tim@cern.com"><gg-icon class="gg-mail"></gg-icon><span>tim@cern.com</span></a></p>
+            <p><a href="cern.com"><gg-icon class="gg-globe-alt"></gg-icon>cern.com</a></p>
+            <p><a href="tel:5085337398"><gg-icon class="gg-phone"></gg-icon>508.533.7398</a></p>
+          </section>
+          <section class="social">
+            <a href="#"><gg-icon class="gg-facebook"></gg-icon></a>
+            <a href="#"><gg-icon class="gg-twitter"></gg-icon></a>
+            <a href="#"><gg-icon class="gg-unsplash"></gg-icon></a>
+            <a href="#"><gg-icon class="gg-youtube"></igg-icon></a>
+          </section>
+          <section class="location">
+            <address>91 Jordan Rd. <br> Franklin, MA <br> USA</address>
+          </section>
+        </div>
+
+
+
+
+        <p class="legal">© <span id="year">2024</span> • Glen Meredith</p>
       </footer>
     </div>
     <script src="js/scripts.js"></script>
