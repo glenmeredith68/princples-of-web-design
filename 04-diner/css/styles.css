@@ -451,9 +451,6 @@ footer section.contact p {
   gap: 0.5rem;
   align-items: center;
 }
-footer section.contact p:hover {
-  color: #737373;
-}
 footer section.contact p a {
   display: flex;
   gap: 0.5rem;
