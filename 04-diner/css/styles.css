@@ -356,12 +356,15 @@ header h1 {
 #navWrapper button {
   background: transparent;
   border: none;
+  font-size: 2rem;
+  padding: 0.3rem;
 }
 
 nav {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 nav a {
   flex: 1;
@@ -370,12 +373,13 @@ nav a {
   padding: 0.75rem;
   text-decoration: none;
   color: black;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 nav a:hover {
-  color: green;
+  background-color: #d0b2d0;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #c199c1;
 }
 
 #footerWrapper {
