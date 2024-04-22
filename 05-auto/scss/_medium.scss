@@ -17,3 +17,7 @@ nav {
         max-width: min-content;
     }
 }
+
+.reviewCards section {
+    flex-basis: calc(50% - $gutter/2);
+}
