@@ -63,6 +63,46 @@ nav {
   }
 }
 
+main img {
+  width: 100%;
+  height: auto;
+}
+
+// dev purposes! 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // border: darkmagenta 3px solid;
+margin: 1rem;
+padding: 0 .5rem;
+}
+
+.column {
+  // border: darkgoldenrod 3px solid;
+  padding: 0 .5rem;
+  margin: .5rem 0;
+}
+
+
+// Create the for loop
+@for $i from 1 through 12 {
+  $w:calc($i / 12) * 100%;
+  .small-#{$i} { flex-basis: $w;}
+}
+
+.line {
+  border: 3px solid $primaryColor;
+}
+.round {
+  border-radius: 6px;
+}
+.fill {
+  background-color: $secondaryColor;
+}
+.shadow {
+  box-shadow: 2px 2px 5px;
+}
 
 // begin the footer
 #footerWrapper {
