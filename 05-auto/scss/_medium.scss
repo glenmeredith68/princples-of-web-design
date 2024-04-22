@@ -18,6 +18,14 @@ nav {
     }
 }
 
+.cardsWrapper {
+margin: auto;
+}
+.cardsWrapper section {
+    flex-basis: calc(50% - $gutter);
+}
+
 .reviewCards section {
-    flex-basis: calc(50% - $gutter/2);
+    flex-basis: 30%;
+
 }

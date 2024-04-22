@@ -350,7 +350,8 @@ header div {
   flex-direction: row;
 }
 header div img {
-  width: 100px;
+  width: 200px;
+  height: 80px;
 }
 header h1 {
   font-family: "Teko", sans-serif;
@@ -553,13 +554,19 @@ main {
   color: inherit;
 }
 
+.reviews {
+  margin-block: 4rem;
+}
+
 .reviewCards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .reviewCards section {
-  flex-basis: 100%;
+  flex-basis: 50%;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -616,13 +623,22 @@ footer p {
     max-width: -moz-min-content;
     max-width: min-content;
   }
+  .cardsWrapper {
+    margin: auto;
+  }
+  .cardsWrapper section {
+    flex-basis: calc(50% - 16px);
+  }
   .reviewCards section {
-    flex-basis: calc(50% - 8px);
+    flex-basis: 30%;
   }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  .cardsWrapper {
+    flex-wrap: nowrap;
   }
 }

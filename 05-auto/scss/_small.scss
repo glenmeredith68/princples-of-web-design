@@ -36,7 +36,8 @@ header {
     display: flex;
     flex-direction: row;
     img {
-      width: 100px;
+      width: 200px;
+      height: 80px;
     }
   }
   h1 {
@@ -251,12 +252,19 @@ main {
   }
 }
 
+.reviews {
+  margin-block: 4rem;
+
+}
+
 .reviewCards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
   section {
-    flex-basis: 100%;
+    flex-basis: 50%;
     padding: $gutter;
     display: flex;
     flex-direction: column;
