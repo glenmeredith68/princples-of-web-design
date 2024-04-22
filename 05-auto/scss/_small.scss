@@ -18,10 +18,11 @@ body {
   font-family: $bodyFont;
   font-weight: $normalWeight;
   color: $fontColor;
+  background-color: $primaryColor;
 }
 
 #headerWrapper {
-  background-color: #abc;
+  background-color: $primaryColor;
   color: $secondaryColor;
 }
 header {
@@ -30,21 +31,53 @@ header {
   padding: 1rem $gutter;
   gap: 8px;
 
+  div {
+    display: flex;
+    flex-direction: row;
+  }
   h1 {
     font-family: $displayFont;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 2.75rem;
     font-weight: $normalWeight;
   }
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: $fontColor;
+
+  button {
+    background: transparent;
+    border: none;
+    color: $secondaryColor;
+    font-size: 2rem;
+    padding: 0.3rem 0;
+    margin-left: $gutter;
+    span {
+      padding: 0.5rem;
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    &.open {
+      span:nth-child(1) {
+        display: none;
+      }
+      span:nth-child(2) {
+        display: block;
+      }
+    }
+  }
 }
 nav {
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
+  flex-direction: column;
+
+  &.open {
+    display: flex;
+  }
 
   a {
     flex: 1;
@@ -52,28 +85,95 @@ nav {
     display: block;
     padding: 0.75rem;
     text-decoration: none;
-    color: black;
+    color: $secondaryColor;
 
     &:hover {
-      color: green;
+      color: lighten($secondaryColor, 15%);
     }
   }
   a.active {
-    background-color: gainsboro;
+    background-color: $primaryColor;
   }
 }
 
+.heroWrapper {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  h2 {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $secondaryColor;
+    background: linear-gradient(
+      60deg,
+      rgba(18, 22, 22, 1) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
+    padding-left: $gutter;
+    width: 68%;
+  }
+}
+main {
+  padding: 0 $gutter;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gutter;
+  section {
+    flex-basis: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px $secondaryColor;
+    padding: $gutter;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      color: $secondaryColor;
+      margin: 0;
+    }
+    button {
+      width: fit-content;
+      padding: 0.5rem;
+      color: $fontColor;
+      background-color: $secondaryColor;
+      border: none;
+      border-radius: 6px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
 
 // begin the footer
 #footerWrapper {
-    background-color: thistle;
+  background-color: $primaryColor;
 }
 footer {
-    padding: .5rem $gutter;
+  padding: 0.5rem $gutter;
+  color: $fontColor;
 
-    p {
-        margin: 0;
-        font-weight: $lightWeight;
-        text-align: center;
-    }
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+  }
 }

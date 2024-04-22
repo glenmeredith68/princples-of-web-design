@@ -5,6 +5,7 @@ document.querySelector("#year").textContent = year;
 
 function toggleMenu() {
   document.querySelector("nav").classList.toggle("open");
+  document.querySelector("#hamb").classList.toggle("open");
 }
 
 const ham = document.querySelector("#ham").addEventListener("click", () => {

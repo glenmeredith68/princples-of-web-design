@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Sample start file" />
+    <meta name="description" content="Sample Automotive Site" />
     <meta name="author" content="Glen Meredith" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Young+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.min.css" />
@@ -20,25 +20,67 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
 
-    <title>Home • Glen Meredith</title>
+    <title>Automotive • Glen Meredith</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="images/logo.png" alt="logo" width="40" height="40">
-        <h1>Glen Meredith</h1>
+        <div>
+          <img src="images/logo.png" alt="logo" width="40" height="40" />
+          <h1>PHP Motors 🏎️</h1>
+        </div>
+<a href="tel:+877CASHNOW">877-CASHNOW</a>
       </header>
     </div>
     <div id="navWrapper">
+      <button id="hamb"><span>&#9776;</span><span>x</span></button>
       <nav>
-        <a class="active" href="#">Learn</a>
-        <a href="#">Practice</a>
-        <a href="#">Implement</a>
+        <a class="active" href="#">Home</a>
+        <a href="#">Buy</a>
+        <a href="#">Sell</a>
       </nav>
     </div>
     <div id="mainWrapper">
       <main>
-        <h2>Learn</h2>
+        <div class="heroWrapper">
+          <img
+            src="images/hero40.webp"
+            alt="Sporty car driving in the mountains at sunset."
+            title="Photo by Erik Mclean on Unsplash"
+            width="1920"
+            height="720"
+          />
+          <h2>Buy fast cars!</h2>
+        </div>
+        <h3>Looking for a car?</h3>
+        <p>When purchasing a fast car, prioritize performance features like horsepower, torque, and acceleration. Ensure the car's handling is responsive and balanced, crucial for control at high speeds. Look for advanced braking systems for safety and precision. Consider aerodynamics to minimize drag and enhance speed. Research reliability ratings and maintenance costs to ensure your investment stays on the road, delivering thrilling experiences mile after mile.</p>
+
+        <div class="cardsWrapper">
+          <section>
+            <img src="svg/dollar.svg" alt="dollar sign">
+            <h4>Price</h4>
+            <p>No one can beat our prices. Our prices compared to the other guys' are like svg file sizes compared to png file sizes. There's just no comparison.</p>
+            <button><a href="#">Shop Now</a></button>
+          </section>
+          <section>
+            <img src="svg/bolt.svg" alt="lightning bolt">
+            <h4>speed</h4>
+            <p>You've gotta have a car that can get you places, and get you there fast. Our cars are the fastest around, guaranteed.</p>
+            <button><a href="#">Speed Up</a></button>
+          </section>
+          <section>
+            <img src="svg/steering-wheel.svg" alt="steering wheel">
+            <h4>Control</h4>
+            <p>Shopping with us, you're in control. It's like making an svg: you lay out the details, and we fillow your instructions.</p>
+            <button><a href="#">Get Started</a></button>
+          </section>
+          <section>
+            <img src="svg/car.svg" alt="car from the front">
+            <h4>Condition</h4>
+            <p>Our cars are in the best of shape. Our suppliers take the best care when bringing them from the factory, so you know you are getting top quality.</p>
+            <button><a href="#">Be Amazed</a></button>
+          </section>
+        </div>
       </main>
     </div>
     <div id="footerWrapper">

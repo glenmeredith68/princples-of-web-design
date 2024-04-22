@@ -4,3 +4,16 @@ header {
         font-size: 2rem;
     }
 }
+
+#navWrapper button {
+    display: none;
+}
+
+nav {
+    padding: 0 $gutter;
+    display: flex;
+    flex-direction: row;
+    a {
+        max-width: min-content;
+    }
+}

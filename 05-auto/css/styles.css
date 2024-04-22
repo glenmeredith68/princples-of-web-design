@@ -327,14 +327,15 @@ html {
 
 body {
   height: 100%;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #e6e8e6;
+  background-color: #121616;
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: rgb(100, 73, 73);
+  background-color: #121616;
+  color: #df2935;
 }
 
 header {
@@ -343,20 +344,48 @@ header {
   padding: 1rem 16px;
   gap: 8px;
 }
+header div {
+  display: flex;
+  flex-direction: row;
+}
 header h1 {
-  font-family: "Young Serif", serif;
+  font-family: "Teko", sans-serif;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 2.75rem;
   font-weight: 400;
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: #e6e8e6;
+}
+#navWrapper button {
+  background: transparent;
+  border: none;
+  color: #df2935;
+  font-size: 2rem;
+  padding: 0.3rem 0;
+  margin-left: 16px;
+}
+#navWrapper button span {
+  padding: 0.5rem;
+}
+#navWrapper button span:nth-child(2) {
+  display: none;
+}
+#navWrapper button.open span:nth-child(1) {
+  display: none;
+}
+#navWrapper button.open span:nth-child(2) {
+  display: block;
 }
 
 nav {
   padding: 0;
   margin: 0;
+  display: none;
+  flex-direction: column;
+}
+nav.open {
   display: flex;
 }
 nav a {
@@ -365,21 +394,85 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
+  color: #df2935;
 }
 nav a:hover {
-  color: green;
+  color: #e96c74;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #121616;
+}
+
+.heroWrapper {
+  position: relative;
+}
+.heroWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.heroWrapper h2 {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #df2935;
+  background: linear-gradient(60deg, rgb(18, 22, 22) 0%, rgba(0, 212, 255, 0) 100%);
+  padding-left: 16px;
+  width: 68%;
+}
+
+main {
+  padding: 0 16px;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cardsWrapper section {
+  flex-basis: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #df2935;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cardsWrapper section img {
+  width: 50%;
+  height: auto;
+}
+.cardsWrapper section h4 {
+  font-size: 1.5rem;
+  color: #df2935;
+  margin: 0;
+}
+.cardsWrapper section button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  color: #e6e8e6;
+  background-color: #df2935;
+  border: none;
+  border-radius: 6px;
+}
+.cardsWrapper section button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #footerWrapper {
-  background-color: thistle;
+  background-color: #121616;
 }
 
 footer {
   padding: 0.5rem 16px;
+  color: #e6e8e6;
 }
 footer p {
   margin: 0;
@@ -393,6 +486,18 @@ footer p {
   }
   header h1 {
     font-size: 2rem;
+  }
+  #navWrapper button {
+    display: none;
+  }
+  nav {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    max-width: -moz-min-content;
+    max-width: min-content;
   }
 }
 @media only screen and (min-width: 60rem) {
