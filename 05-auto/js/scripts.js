@@ -29,7 +29,7 @@ function toggleMenu() {
     
     for (let j = 0; j < reviews[i].stars; j++) {
       const starImg = document.createElement('img');
-      starImg.src = '/svg/star.svg';
+      starImg.src = '/principles-of-web-design/05-auto/svg/star.svg';
       stars.appendChild(starImg);
     }
 
