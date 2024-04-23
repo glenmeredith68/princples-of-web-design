@@ -341,7 +341,7 @@ body {
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem 16px;
   gap: 8px;
@@ -440,6 +440,15 @@ footer p {
     display: block;
     justify-self: end;
   }
+  header .phone a {
+    color: #591f0a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  header .phone a:hover {
+    color: white;
+  }
   #ham, #closex {
     display: none;
   }
@@ -461,5 +470,9 @@ footer p {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  nav a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
   }
 }

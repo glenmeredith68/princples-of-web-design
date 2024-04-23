@@ -6,6 +6,15 @@ header {
   .phone {
     display: block;
     justify-self: end;
+    a {
+        color: $fontColor;
+text-decoration: none;
+font-weight: $boldWeight;
+font-size: 1.5rem;
+&:hover {
+    color: white;
+}
+    }
   }
 }
 

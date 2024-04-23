@@ -2,3 +2,9 @@ header, nav, main, footer {
   max-width: 60rem;
   margin: auto;
 }
+
+
+nav a {
+  padding: .2rem 1rem;
+  border-radius: 10px;
+}
