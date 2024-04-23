@@ -330,18 +330,26 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
   color: #591f0a;
+  display: grid;
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: #0267c1;
+  grid-row: 1;
+  background-color: #efa00b;
+  color: #591f0a;
 }
 
 header {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
   padding: 1rem 16px;
   gap: 8px;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 header h1 {
   font-family: "Young Serif", serif;
@@ -349,33 +357,67 @@ header h1 {
   font-size: 1.2rem;
   font-weight: 400;
 }
+header .phone {
+  display: none;
+}
 
 #navWrapper {
-  background-color: thistle;
+  grid-row: 4;
+  background-color: #0267c1;
+  padding: 16px;
 }
 
 nav {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 nav a {
-  flex: 1;
-  text-align: center;
+  flex-basis: 5%;
+  text-align: right;
+  align-items: center;
+  max-height: -moz-min-content;
+  max-height: min-content;
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
+  color: white;
+  border-bottom: 1px solid #efa00b;
+}
+nav a:last-child {
+  border-bottom: 1px solid #efa00b;
 }
 nav a:hover {
-  color: green;
+  color: #efa00b;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #d65108;
+}
+
+#ham a,
+#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  font-size: 1.5rem;
+  color: #591f0a;
+  text-decoration: none;
+  text-align: right;
+}
+
+#closex a {
+  color: #d65108;
+}
+
+#mainWrapper {
+  grid-row: 2;
+  height: 100vh;
 }
 
 #footerWrapper {
-  background-color: thistle;
+  grid-row: 3;
+  background-color: #efa00b;
 }
 
 footer {
@@ -393,6 +435,26 @@ footer p {
   }
   header h1 {
     font-size: 2rem;
+  }
+  header .phone {
+    display: block;
+    justify-self: end;
+  }
+  #ham, #closex {
+    display: none;
+  }
+  nav {
+    height: auto;
+    flex-direction: row;
+  }
+  nav a {
+    border: none;
+  }
+  nav a:last-child {
+    border: none;
+  }
+  body {
+    display: block;
   }
 }
 @media only screen and (min-width: 60rem) {

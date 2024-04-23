@@ -21,8 +21,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: $secondaryColor;
+  background-color: $primaryColor;
+  color: $fontColor;
 }
 header {
   display: flex;
@@ -39,7 +39,7 @@ header {
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: $secondaryColor;
 }
 nav {
   padding: 0;
@@ -52,21 +52,21 @@ nav {
     display: block;
     padding: 0.75rem;
     text-decoration: none;
-    color: black;
+    color: white;
 
     &:hover {
-      color: green;
+      color: $primaryColor;
     }
   }
   a.active {
-    background-color: gainsboro;
+    background-color: $tertiaryColor;
   }
 }
 
 
 // begin the footer
 #footerWrapper {
-    background-color: thistle;
+    background-color: $primaryColor;
 }
 footer {
     padding: .5rem $gutter;

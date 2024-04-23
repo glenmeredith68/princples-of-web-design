@@ -1,6 +1,30 @@
 header {
-    padding: 2rem $gutter;
-    h1 {
-        font-size: 2rem;
+  padding: 2rem $gutter;
+  h1 {
+    font-size: 2rem;
+  }
+  .phone {
+    display: block;
+    justify-self: end;
+  }
+}
+
+#ham, #closex {
+    display: none;
+}
+
+nav {
+    height: auto;
+    flex-direction: row;
+    a {
+        border: none;
+        &:last-child {
+            border: none;
+        }
     }
+}
+
+
+body{
+    display: block;
 }
