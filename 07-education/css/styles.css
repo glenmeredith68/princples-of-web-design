@@ -415,6 +415,17 @@ nav a.active {
   height: 100vh;
 }
 
+.applyForm {
+  margin: 1rem 16px;
+}
+.applyForm label {
+  display: block;
+  font-size: 0.8rem;
+  color: #0267c1;
+  margin: 1.5rem 0 2rem 0;
+  border-bottom: 1px solid #0267c1;
+}
+
 #footerWrapper {
   grid-row: 3;
   background-color: #efa00b;

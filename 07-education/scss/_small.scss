@@ -102,6 +102,27 @@ nav {
   height: 100vh;
 }
 
+.applyForm {
+  margin: 1rem $gutter;
+label {
+  display: block;
+  font-size: .8rem;
+  color: $secondaryColor;
+  margin: 1.5rem 0 2rem 0;
+  border-bottom: 1px solid $secondaryColor;
+}
+input[type=text]
+}
+
+
+
+
+
+
+
+
+
+
 // begin the footer
 #footerWrapper {
   grid-row: 3;
