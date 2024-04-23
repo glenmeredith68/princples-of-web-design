@@ -21,7 +21,7 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
+  background-color: $primaryColor;
   color: $secondaryColor;
 }
 header {
@@ -29,6 +29,7 @@ header {
   align-items: flex-end;
   padding: 1rem $gutter;
   gap: 8px;
+  position: relative;
 
   h1 {
     font-family: $displayFont;
@@ -39,12 +40,13 @@ header {
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: $tertiaryColor;
 }
 nav {
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
+  position: absolute;
 
   a {
     flex: 1;
@@ -52,14 +54,14 @@ nav {
     display: block;
     padding: 0.75rem;
     text-decoration: none;
-    color: black;
+    color: $fontColor;
 
     &:hover {
-      color: green;
+      color: $secondaryColor;
     }
   }
   a.active {
-    background-color: gainsboro;
+    text-decoration: underline 3px solid $secondaryColor;
   }
 }
 
@@ -80,8 +82,8 @@ padding: 0 .5rem;
 
 .column {
   // border: darkgoldenrod 3px solid;
-  padding: 0 .5rem;
-  margin: .5rem 0;
+  padding: 0 2rem;
+  margin: 1rem 0;
 }
 
 
