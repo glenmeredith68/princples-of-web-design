@@ -329,12 +329,12 @@ body {
   height: 100%;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  color: #191919;
+  color: #591f0a;
 }
 
 #headerWrapper {
-  background-color: #e6e8e6;
-  color: #f15025;
+  background-color: #abc;
+  color: #0267c1;
 }
 
 header {
@@ -342,7 +342,6 @@ header {
   align-items: flex-end;
   padding: 1rem 16px;
   gap: 8px;
-  position: relative;
 }
 header h1 {
   font-family: "Young Serif", serif;
@@ -351,46 +350,13 @@ header h1 {
   font-weight: 400;
 }
 
-h2 {
-  margin-left: 16px;
-}
-
 #navWrapper {
-  background-color: #ced0ce;
-}
-#navWrapper button {
-  background: transparent;
-  border: none;
-  color: #f15025;
-  font-size: 2rem;
-  padding: 0.3rem 0;
-  margin-left: 16px;
-}
-#navWrapper button span {
-  padding: 0.5rem;
-}
-#navWrapper button span:nth-child(2) {
-  display: none;
-}
-#navWrapper button.open span:nth-child(1) {
-  display: none;
-}
-#navWrapper button.open span:nth-child(2) {
-  display: block;
+  background-color: thistle;
 }
 
 nav {
   padding: 0;
   margin: 0;
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  left: 16px;
-  background-color: #ced0ce;
-  border-radius: 6px;
-  border: 3px solid #f15025;
-}
-nav.open {
   display: flex;
 }
 nav a {
@@ -399,96 +365,13 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: #191919;
+  color: black;
 }
 nav a:hover {
-  color: #f15025;
+  color: green;
 }
 nav a.active {
-  -webkit-text-decoration: underline 3px solid #f15025;
-          text-decoration: underline 3px solid #f15025;
-}
-
-main img {
-  width: 100%;
-  height: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 1rem;
-  padding: 0 0.5rem;
-}
-
-.column {
-  padding: 0 0.5rem;
-  margin: 0.5rem 0;
-}
-
-.small-1 {
-  flex-basis: 8.3333333333%;
-}
-
-.small-2 {
-  flex-basis: 16.6666666667%;
-}
-
-.small-3 {
-  flex-basis: 25%;
-}
-
-.small-4 {
-  flex-basis: 33.3333333333%;
-}
-
-.small-5 {
-  flex-basis: 41.6666666667%;
-}
-
-.small-6 {
-  flex-basis: 50%;
-}
-
-.small-7 {
-  flex-basis: 58.3333333333%;
-}
-
-.small-8 {
-  flex-basis: 66.6666666667%;
-}
-
-.small-9 {
-  flex-basis: 75%;
-}
-
-.small-10 {
-  flex-basis: 83.3333333333%;
-}
-
-.small-11 {
-  flex-basis: 91.6666666667%;
-}
-
-.small-12 {
-  flex-basis: 100%;
-}
-
-.line {
-  border: 3px solid #e6e8e6;
-}
-
-.round {
-  border-radius: 6px;
-}
-
-.fill {
-  background-color: #f15025;
-}
-
-.shadow {
-  box-shadow: 2px 2px 5px;
+  background-color: gainsboro;
 }
 
 #footerWrapper {
@@ -511,96 +394,10 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
-  #navWrapper button {
-    display: none;
-  }
-  nav {
-    padding: 0 16px;
-    display: flex;
-    position: relative;
-    justify-content: right;
-    flex-direction: row;
-  }
-  nav a {
-    max-width: -moz-min-content;
-    max-width: min-content;
-  }
-  .medium-1 {
-    flex-basis: 8.3333333333%;
-  }
-  .medium-2 {
-    flex-basis: 16.6666666667%;
-  }
-  .medium-3 {
-    flex-basis: 25%;
-  }
-  .medium-4 {
-    flex-basis: 33.3333333333%;
-  }
-  .medium-5 {
-    flex-basis: 41.6666666667%;
-  }
-  .medium-6 {
-    flex-basis: 50%;
-  }
-  .medium-7 {
-    flex-basis: 58.3333333333%;
-  }
-  .medium-8 {
-    flex-basis: 66.6666666667%;
-  }
-  .medium-9 {
-    flex-basis: 75%;
-  }
-  .medium-10 {
-    flex-basis: 83.3333333333%;
-  }
-  .medium-11 {
-    flex-basis: 91.6666666667%;
-  }
-  .medium-12 {
-    flex-basis: 100%;
-  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
-  }
-  .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-  .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  .large-3 {
-    flex-basis: 25%;
-  }
-  .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  .large-6 {
-    flex-basis: 50%;
-  }
-  .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  .large-9 {
-    flex-basis: 75%;
-  }
-  .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  .large-12 {
-    flex-basis: 100%;
   }
 }
