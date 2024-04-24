@@ -329,12 +329,12 @@ body {
   height: 100%;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #040404;
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: rgb(100, 73, 73);
+  background-color: #d7d9ce;
+  color: #040404;
 }
 
 header {
@@ -351,12 +351,50 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: #040404;
+}
+#navWrapper button {
+  height: 44px;
+  width: 44px;
+  background: none;
+  border: none;
+  position: relative;
+}
+#navWrapper button .line {
+  position: absolute;
+  background-color: #d7d9ce;
+  height: 2px;
+  width: 60%;
+  left: 20%;
+  transition: all 0.3s ease-out;
+}
+#navWrapper button .top {
+  top: 29%;
+}
+#navWrapper button .middle {
+  top: 48%;
+}
+#navWrapper button .bottom {
+  top: 67%;
+}
+
+#ham.open .top {
+  transform: rotate(45deg);
+  top: 48%;
+}
+#ham.open .middle,
+#ham.open .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
 }
 
 nav {
   padding: 0;
   margin: 0;
+  display: none;
+  flex-direction: column;
+}
+nav.open {
   display: flex;
 }
 nav a {
@@ -365,17 +403,106 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 nav a:hover {
-  color: green;
+  color: #d7d9ce;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #0c7489;
+}
+
+main {
+  margin: 0 16px;
+}
+
+.hero {
+  position: relative;
+}
+.hero div {
+  position: absolute;
+  bottom: 20px;
+  top: 20px;
+  left: 0%;
+  right: 0%;
+  color: #d7d9ce;
+  text-align: center;
+  background: radial-gradient(circle, rgb(19, 80, 91) 0%, rgba(19, 80, 91, 0.8029586835) 19%, rgba(19, 80, 91, 0.5704656863) 62%, rgba(19, 80, 91, 0) 100%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero div h3, .hero div p {
+  margin: 0;
+}
+.hero video {
+  width: 100%;
+  height: auto;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-front img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #119da4;
+  color: #040404;
+  transform: rotateY(180deg);
+  padding: 16px;
+}
+.flip-card-back p {
+  text-align: left;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
 }
 
 #footerWrapper {
-  background-color: thistle;
+  background-color: #d7d9ce;
 }
 
 footer {
@@ -394,10 +521,36 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  #navWrapper {
+    padding: 1rem;
+  }
+  #navWrapper button {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .hero div {
+    top: 30%;
+    bottom: 30%;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 60rem;
+    max-width: 65rem;
     margin: auto;
   }
 }

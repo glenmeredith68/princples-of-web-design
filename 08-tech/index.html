@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Sample start file" />
+    <meta name="description" content="GLEN Tech Conference" />
     <meta name="author" content="Glen Meredith" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,16 +20,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
 
-    <title>Home • Glen Meredith</title>
+    <title>Home • GLEN Tech conference</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="images/logo.png" alt="logo" width="40" height="40">
-        <h1>Glen Meredith</h1>
+        <img src="images/logo.png" alt="logo" width="40" height="40" />
+        <h1>GLEN Tech Conference</h1>
       </header>
     </div>
     <div id="navWrapper">
+      <button id="ham">
+        <span class="line top"></span>
+        <span class="line middle"></span
+        ><span class="line bottom"></span>
+      </button>
       <nav>
         <a class="active" href="#">Learn</a>
         <a href="#">Practice</a>
@@ -38,7 +43,64 @@
     </div>
     <div id="mainWrapper">
       <main>
-        <h2>Learn</h2>
+        <h2>GLEN Tech Conference</h2>
+        <div class="hero">
+          <video autoplay muted playinline loop width="250">
+            <source src="/media/My Movie-hb.webm" type="video/webm" />
+          
+            <source src="/media/bg.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <h3>GLEN Tech Conference</h3>
+            <p>Gearing, Leading, Empowering, Navigating</p>
+          </div>
+        </div>
+        
+        <h2>Fantastic speakers</h2>
+        <p>As the countdown to the GLEN Tech Conference begins, excitement mounts for the unparalleled opportunity to hear from three eminent speakers who stand at the forefront of technological advancement. Dr. Elara Voss, renowned for her pioneering work in computational neuroscience, is set to delve into the intricate connections between artificial intelligence and the human brain, promising to unveil the secrets of cognition and consciousness. Alongside her, Professor Thaddeus Kaine, a luminary in quantum information theory, prepares to transport audiences into the quantum realm, where computing power defies conventional boundaries and unlocks a universe of limitless possibilities.</p>
+        <p>Completing this triumvirate of brilliance is Dr. Amara Singh, an esteemed figure in biotechnology and genetic engineering, whose groundbreaking research holds the key to revolutionizing healthcare as we know it. With her visionary insights, Dr. Singh offers a glimpse into a future where personalized medicine and genetic therapies pave the way for a healthier, more resilient society. Together, these three speakers promise to ignite the imaginations of attendees and chart a course towards a future defined by innovation and progress.</p>
+
+
+        <div class="cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/elara.jpg" alt="Dr. Voss" style="width:300px;height:500px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Dr.Elara Voss</h1>
+                <p>Computational Neuroscience</p>
+                <p>Dr. Elara Voss, a luminary in computational neuroscience, brings unparalleled expertise to the GLEN Tech Conference. Her pioneering research delves deep into the intricacies of human cognition and its intersection with artificial intelligence. With a captivating blend of vision and insight, Dr. Voss promises to unravel the mysteries of the mind, offering profound perspectives that challenge conventional thinking and inspire transformative advancements in technology and beyond.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/thaddeus.jpg" alt="Professor Kaine" style="width:300px;height:500px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Professor Thaddeus Kaine</h1>
+                <p>Quantum Information Theory</p>
+                <p>Professor Thaddeus Kaine, a trailblazer in quantum information theory, commands attention with his visionary insights. At the forefront of cutting-edge research, he illuminates the enigmatic world of quantum computing, where classical boundaries dissolve, and new frontiers emerge. With an unparalleled blend of intellect and innovation, Professor Kaine captivates audiences, offering glimpses into a future where quantum principles redefine the very essence of computing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/amara.jpg" alt="Dr. Singh" style="width:300px;height:500px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Dr.Amara Singh</h1>
+                <p>Genetic Engineering</p>
+                <p>Dr. Amara Singh, a luminary in biotechnology and genetic engineering, stands as a beacon of innovation at the GLEN Tech Conference. With groundbreaking research, she leads the charge in personalized medicine, unveiling the transformative potential of genetic therapies. Dr. Singh's visionary insights illuminate a path toward a future where healthcare is tailored to individual needs, offering hope for a world where genetic advancements revolutionize treatment, enhancing both longevity and quality of life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </main>
     </div>
     <div id="footerWrapper">

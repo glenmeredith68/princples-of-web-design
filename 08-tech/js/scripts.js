@@ -2,3 +2,11 @@
 const rightNow = new Date();
 const year = rightNow.getFullYear();
 document.querySelector('#year').textContent = year;
+
+const ham = document.querySelector('#ham');
+const nav = document.querySelector('nav');
+
+ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    nav.classList.toggle('open');
+})
