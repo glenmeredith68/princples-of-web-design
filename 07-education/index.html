@@ -26,7 +26,7 @@
     <div id="headerWrapper">
       <header>
         <div class="logo">
-          <img src="images/logo.png" alt="logo" width="40" height="40" />
+          <img src="images/logo.svg" alt="logo" width="40" height="40" />
           <h1>Glen Meredith University</h1>
         </div>
         <div id="ham"><a href="#closex">&#9776;</a></div>
@@ -61,6 +61,7 @@
               autocomplete="given-name"
               placeholder="Glen"
               required
+              autofocus
           /></label>
           <label for="lname"
             >Last Name<span class="astrisk">*</span
@@ -93,92 +94,135 @@
               autocomplete="tel"
               placeholder="877CASHNOW"
               title="Phone Number"
+              required
+          /></label>
+          <label for="street"
+            >Address<input
+              type="text"
+              name="address"
+              id="address"
+              autocomplete="street-address"
+              placeholder="91 Jordan Rd."
+              title="Street address"
+          /></label>
+          <label for="city"
+            >City<input
+              type="text"
+              name="city"
+              id="city"
+              autocomplete="address-level2"
+              placeholder="Franklin"
+              title="City"
+          /></label>
+          <label for="state"
+            >State<input
+              type="text"
+              name="state"
+              id="state"
+              autocomplete="address-level1"
+              placeholder="MA"
+              title="State"
+          /></label>
+          <label for="zip"
+            >Zip Code<input
+              type="number"
+              name="zip"
+              id="zip"
+              placeholder="84058"
+              title="Zip Code"
           /></label>
 
-          <h3>Choose your schedule</h3>
-          <p>
-            Here at GMU we like students to take courses one at a time so they
-            can learn everything and soak it all in!
-          </p>
-          <label for="course">
-            Choose a course
-            <select name="course" id="course">
-              <option value="no selection made">Please choose a course</option>
-              <option value="design">Design</option>
-              <option value="development">Development</option>
-              <option value="capstone">Capstone</option>
+          <h3>Education Completed</h3>
+          <p>Tell us about where you've been!</p>
+          <label for="prev">
+            Previous School
+            <select name="prev" id="prev">
+              <option value="no selection made">Please choose a school</option>
+              <option value="design">Harvard Design School</option>
+              <option value="development">UCLA Development</option>
+              <option value="capstone">University of Alabama</option>
             </select>
           </label>
-          <label for="availability"
-            >Availability<input
-              type="checkbox"
-              name="availability"
-              id="availability"
-              value="monday"
-            />Monday</label
+          <label for="grad"
+            >Graduation Date<input
+              type="date"
+              name="grad"
+              id="grad"
+              title="Graduation Date"
+          /></label>
+          <p class="label">Education Completed</p>
+          <label for="comp"
+            ><input type="checkbox" name="comp" id="comp" value="some-hs" />Some
+            High School</label
           >
-          <label for="availability"
+          <label for="comp"
+            ><input type="checkbox" name="comp" id="comp" value="hs" />High
+            School Diploma</label
+          >
+          <label for="comp"
+            ><input type="checkbox" name="comp" id="comp" value="some-c" />Some
+            College</label
+          >
+          <label for="comp"
             ><input
               type="checkbox"
-              name="availability"
-              id="availability"
-              value="tuesday"
-            />Tuesday</label
+              name="comp"
+              id="comp"
+              value="asso-degree"
+            />Associate Degree</label
           >
-          <label for="availability"
+          <label for="comp"
             ><input
               type="checkbox"
-              name="availability"
-              id="availability"
-              value="wednesday"
-            />Wednesday</label
-          >
-          <label for="availability"
-            ><input
-              type="checkbox"
-              name="availability"
-              id="availability"
-              value="thursday"
-            />Thursday</label
-          >
-          <label for="availability"
-            ><input
-              type="checkbox"
-              name="availability"
-              id="availability"
-              value="friday"
-            />Friday</label
+              name="comp"
+              id="comp"
+              value="bach-degree"
+            />Bachelor's Degree</label
           >
 
-          <h3>Choose a class format</h3>
-          <label for="format"
+          <h3>Commmunication Preferences</h3>
+          <label for="comm"
             ><input
               type="radio"
-              name="format"
+              name="comm"
               value="in-person"
             />In-person</label
           >
-          <label for="format"
-            ><input type="radio" name="format" value="remote" />Remote</label
+          <label for="comm"
+            ><input type="radio" name="comm" value="phone" />Phone</label
           >
-          <label for="format"
-            ><input type="radio" name="format" value="hybrid" />Hybrid</label
+          <label for="comm"
+            ><input type="radio" name="comm" value="text" />Text</label
+          >
+          <label for="comm"
+            ><input type="radio" name="comm" value="email" />Email</label
+          >
+          <label for="comm"
+            ><input type="radio" name="comm" value="paper" />Paper Mail</label
           >
 
           <label for="userName"
-            >User Name (6 or more) <span class="asterisk">*</span
-            ><input type="text" name="userName" id="userName" minlength="6"
+            >User Name (5-10 uppercase or lowercase letters)<span
+              class="asterisk"
+              >*</span
+            ><input
+              type="text"
+              name="userName"
+              pattern="[A-Za-z]{5,10}"
+              id="userName"
+              title="User Name 5-10 letters"
+              required
           /></label>
 
           <label for="pw"
-            >Password (15-19 letters or numbers) <span class="asterisk">*</span
+            >Password (6 or more)<span class="asterisk">*</span
             ><input
               type="password"
               name="pw"
               id="pw"
               required
-              pattern="[A-Za-z0-9]{15,19}"
-              title="No special characters"
+              minlength="6"
+              title="Password 6+ chars"
             />
           </label>
 

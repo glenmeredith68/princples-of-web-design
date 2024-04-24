@@ -44,8 +44,11 @@ header {
     margin: 0;
     font-size: 1.2rem;
     font-weight: $normalWeight;
+    color: $secondaryColor;
   }
-  .phone {display: none;}
+  .phone {
+    display: none;
+  }
 }
 
 #navWrapper {
@@ -59,9 +62,9 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
+
   a {
-    flex-basis:5%;
+    flex-basis: 5%;
     text-align: right;
     align-items: center;
     max-height: min-content;
@@ -99,27 +102,95 @@ nav {
 
 #mainWrapper {
   grid-row: 2;
-  height: 100vh;
+  padding: 0 $gutter;
+}
+
+h2 {
+  color: $tertiaryColor;
 }
 
 .applyForm {
   margin: 1rem $gutter;
-label {
-  display: block;
-  font-size: .8rem;
-  color: $secondaryColor;
-  margin: 1.5rem 0 2rem 0;
-  border-bottom: 1px solid $secondaryColor;
+  label, .label {
+    display: block;
+    font-size: 0.8rem;
+    color: $secondaryColor;
+    padding-top: 2rem;
+  }
+  h3 {
+    color: $tertiaryColor;
+    margin: 1.5rem 0 0rem 0;
+    border-bottom: 1px solid $secondaryColor;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    display: block;
+    width: 256px;
+    height: 48px;
+    border-radius: 6px 0 6px 0;
+    border: 2px solid $fontColor;
+    color: $fontColor;
+    margin-top: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    &:focus {
+      border: 3px solid $secondaryColor;
+    }
+  }
+  input[type="submit"] {
+    border: none;
+    background-color: $tertiaryColor;
+    color: white;
+    border-radius: 6px 0 6px 0;
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 196px;
+    font-size: 1.3remrem;
+    -webkit-appearance: none;
+    appearance: none;
+    font-weight: $boldWeight;
+    &:hover {
+      background-color: lighten($tertiaryColor, 4%);
+    }
+    &:active {
+      background-color: darken($tertiaryColor, 4%);
+    }
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    transform: scale(2);
+    margin-right: 1rem;
+  }
+
+
+  input:required {
+    &:invalid {
+      color: rgb(255, 0, 0);
+    }
+    &:valid {
+      color: green;
+    }
+  }
+  .label {
+margin-bottom: -16px;
+  }
+ label[for='comp'], label[for='comm'] {
+  color: $fontColor;
+  font-size: 1rem;
+ }
+  p {
+    margin: 0;
+  }
 }
-input[type=text]
+.astrisk {
+  color: red;
 }
-
-
-
-
-
-
-
 
 
 

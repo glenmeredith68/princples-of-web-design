@@ -3,8 +3,12 @@ header, nav, main, footer {
   margin: auto;
 }
 
-
+nav {
+  justify-content: flex-end;
+}
 nav a {
+  flex-basis: 19%;
+  text-align: right;
   padding: .2rem 1rem;
   border-radius: 10px;
 }

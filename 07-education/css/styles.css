@@ -356,6 +356,7 @@ header h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 400;
+  color: #0267c1;
 }
 header .phone {
   display: none;
@@ -412,18 +413,97 @@ nav a.active {
 
 #mainWrapper {
   grid-row: 2;
-  height: 100vh;
+  padding: 0 16px;
+}
+
+h2 {
+  color: #d65108;
 }
 
 .applyForm {
   margin: 1rem 16px;
 }
-.applyForm label {
+.applyForm label, .applyForm .label {
   display: block;
   font-size: 0.8rem;
   color: #0267c1;
-  margin: 1.5rem 0 2rem 0;
+  padding-top: 2rem;
+}
+.applyForm h3 {
+  color: #d65108;
+  margin: 1.5rem 0 0rem 0;
   border-bottom: 1px solid #0267c1;
+}
+.applyForm input[type=text],
+.applyForm input[type=tel],
+.applyForm input[type=email],
+.applyForm input[type=password],
+.applyForm input[type=number],
+.applyForm input[type=date],
+.applyForm select {
+  display: block;
+  width: 256px;
+  height: 48px;
+  border-radius: 6px 0 6px 0;
+  border: 2px solid #591f0a;
+  color: #591f0a;
+  margin-top: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.applyForm input[type=text]:focus,
+.applyForm input[type=tel]:focus,
+.applyForm input[type=email]:focus,
+.applyForm input[type=password]:focus,
+.applyForm input[type=number]:focus,
+.applyForm input[type=date]:focus,
+.applyForm select:focus {
+  border: 3px solid #0267c1;
+}
+.applyForm input[type=submit] {
+  border: none;
+  background-color: #d65108;
+  color: white;
+  border-radius: 6px 0 6px 0;
+  padding: 1rem;
+  margin: 2rem 0;
+  width: 196px;
+  font-size: 1.3remrem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  font-weight: 700;
+}
+.applyForm input[type=submit]:hover {
+  background-color: #ea5809;
+}
+.applyForm input[type=submit]:active {
+  background-color: #c24a07;
+}
+.applyForm input[type=checkbox],
+.applyForm input[type=radio] {
+  transform: scale(2);
+  margin-right: 1rem;
+}
+.applyForm input:required:invalid {
+  color: rgb(255, 0, 0);
+}
+.applyForm input:required:valid {
+  color: green;
+}
+.applyForm .label {
+  margin-bottom: -16px;
+}
+.applyForm label[for=comp], .applyForm label[for=comm] {
+  color: #591f0a;
+  font-size: 1rem;
+}
+.applyForm p {
+  margin: 0;
+}
+
+.astrisk {
+  color: red;
 }
 
 #footerWrapper {
@@ -460,6 +540,9 @@ footer p {
   header .phone a:hover {
     color: white;
   }
+  #navWrapper {
+    padding: 0;
+  }
   #ham, #closex {
     display: none;
   }
@@ -468,6 +551,10 @@ footer p {
     flex-direction: row;
   }
   nav a {
+    flex-basis: 33%;
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
     border: none;
   }
   nav a:last-child {
@@ -482,7 +569,12 @@ footer p {
     max-width: 60rem;
     margin: auto;
   }
+  nav {
+    justify-content: flex-end;
+  }
   nav a {
+    flex-basis: 19%;
+    text-align: right;
     padding: 0.2rem 1rem;
     border-radius: 10px;
   }
