@@ -31,9 +31,23 @@
     </div>
     <div id="navWrapper">
       <nav>
-        <a class="active" href="#">Learn</a>
-        <a href="#">Practice</a>
-        <a href="#">Implement</a>
+        <button id="ham">&#9776;</button>
+        <ul id="primaryNav">
+          <li><a href="#">Learn</a></li>
+          <li class="parent"><a href="#">Practice</a>
+            <ul>
+              <li><a href="#">Code</a></li>
+              <li class="active"><a href="#">Design</a></li>
+              <li><a href="#">Handoff</a></li>
+            </ul>
+          </li>
+          <li class="parent"><a href="#">Implement</a>
+            <ul>
+              <li><a href="#">Code</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Handoff</a></li>
+            </ul></li>
+        </ul>
       </nav>
     </div>
     <div id="mainWrapper">

@@ -38,30 +38,31 @@ header {
   }
 }
 
-#navWrapper {
-  background-color: $secondaryColor;
-}
-nav {
-  padding: 0;
-  margin: 0;
-  display: flex;
+// #navWrapper {
+//   background-color: $secondaryColor;
+// }
+// nav {
+//   padding: 0;
+//   margin: 0;
+//   display: flex;
 
-  a {
-    flex: 1;
-    text-align: center;
-    display: block;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: white;
+//   a {
+//     flex: 1;
+//     text-align: center;
+//     display: block;
+//     padding: 0.75rem;
+//     text-decoration: none;
+//     color: white;
 
-    &:hover {
-      color: $primaryColor;
-    }
-  }
-  a.active {
-    background-color: $tertiaryColor;
-  }
-}
+//     &:hover {
+//       color: $primaryColor;
+//     }
+//   }
+//   a.active {
+//     background-color: white;
+//     color: $secondaryColor;
+//   }
+// }
 
 
 // begin the footer
