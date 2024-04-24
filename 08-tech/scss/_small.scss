@@ -27,8 +27,14 @@ body {
 header {
   display: flex;
   align-items: flex-end;
+  align-items: center;
   padding: 1rem $gutter;
   gap: 8px;
+div {
+h1,h3 {
+  margin: 0;
+}
+}
 
   h1 {
     font-family: $displayFont;
