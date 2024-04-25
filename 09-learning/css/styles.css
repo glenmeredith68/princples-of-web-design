@@ -388,9 +388,17 @@ header .phone {
 }
 .cards section div img:last-of-type {
   position: absolute;
-  height: 100%;
+  height: 50px;
   width: 100%;
-  top: 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+  bottom: 0;
+}
+.cards section div img[alt=svg] {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 30px;
 }
 
 .shapes {
