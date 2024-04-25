@@ -331,6 +331,7 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
   color: #1F2041;
+  background-color: grey;
 }
 
 #headerWrapper {
@@ -340,15 +341,75 @@ body {
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 16px;
   gap: 8px;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 header h1 {
   font-family: "Young Serif", serif;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 400;
+  color: #4B3F72;
+}
+header .phone {
+  display: block;
+}
+
+.swiper,
+.swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cards section {
+  padding: 0.5rem;
+}
+.cards section div {
+  position: relative;
+}
+.cards section div img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.cards section div img:last-of-type {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.shapes {
+  margin-top: 3rem;
+  display: flex;
+}
+.shapes section {
+  padding: 0.5rem;
+  flex-basis: 45%;
+}
+.shapes section img {
+  width: 100%;
+  height: auto;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transition: transform 1s;
+}
+.shapes section img:hover {
+  transform: rotate(15deg);
 }
 
 #footerWrapper {
@@ -505,6 +566,18 @@ footer p {
     margin-left: 0;
     z-index: 99;
   }
+  .shapes section {
+    display: grid;
+    grid-template-columns: 140px auto;
+    gap: 16px;
+    align-items: center;
+    padding: 1rem;
+    flex-basis: 45%;
+  }
+  .shapes section img {
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
@@ -514,5 +587,12 @@ footer p {
   nav ul li a {
     font-size: 0.9rem;
     padding: 0.5rem 1.2rem;
+  }
+  .shapes section {
+    grid-template-columns: 200px auto;
+  }
+  .shapes section img {
+    -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
   }
 }

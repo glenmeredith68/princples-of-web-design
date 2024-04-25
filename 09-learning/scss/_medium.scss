@@ -70,3 +70,16 @@ ul li:hover ul {
     margin-left: 0;
     z-index: 99;
 }
+
+
+.shapes {
+    section {
+        display: grid;
+        grid-template-columns: 140px auto;
+        gap: $gutter;
+        align-items: center;
+      padding: 1rem;
+      flex-basis: 45%;
+      img {clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);}
+    }
+  }

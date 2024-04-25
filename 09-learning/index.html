@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Sample start file" />
+    <meta name="description" content="Glen Landscape and Lighting" />
     <meta name="author" content="Glen Meredith" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,45 +14,122 @@
     />
     <link rel="stylesheet" href="css/styles.min.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- favicon stuff -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
 
-    <title>Home • Glen Meredith</title>
+    <title>Home • Glen Landscape and Lighting</title>
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="images/logo.png" alt="logo" width="40" height="40">
-        <h1>Glen Meredith</h1>
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" width="40" height="40" />
+          <h1>Glen Landscape and Lighting</h1>
+        </div>
+        <div class="phone"><a href="tel:+877CASHNOW">877-CASHNOW</a></div>
       </header>
     </div>
     <div id="navWrapper">
       <nav>
         <button id="ham">&#9776;</button>
         <ul id="primaryNav">
-          <li><a href="#">Learn</a></li>
-          <li class="parent"><a href="#">Practice</a>
+          <li><a href="#">Landscape</a></li>
+          <li class="parent">
+            <a href="#">Lighting</a>
             <ul>
-              <li><a href="#">Code</a></li>
-              <li class="active"><a href="#">Design</a></li>
-              <li><a href="#">Handoff</a></li>
+              <li><a href="#">Lamps</a></li>
+              <li class="active"><a href="#">Flashlights</a></li>
+              <li><a href="#">Strobe</a></li>
             </ul>
           </li>
-          <li class="parent"><a href="#">Implement</a>
+          <li class="parent">
+            <a href="#">More</a>
             <ul>
-              <li><a href="#">Code</a></li>
-              <li><a href="#">Design</a></li>
-              <li><a href="#">Handoff</a></li>
-            </ul></li>
+              <li><a href="#">Tricks</a></li>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </div>
     <div id="mainWrapper">
       <main>
-        <h2>Learn</h2>
+        <h2>Flashlights</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/bird-small.jpeg" media="(max-width: 320px)">
+                <source srcset="images/bird-med.jpeg" media="(max-width: 860px)">
+                <img src="images/bird-large.jpg" alt="Pelicans">
+            </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/coding-small.jpeg" media="(max-width: 320px)">
+                <source srcset="images/coding-med.jpeg" media="(max-width: 860px)">
+                <img src="images/coding-large.jpeg" alt="Coding">
+            </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/design-small.jpeg" media="(max-width: 320px)">
+                <source srcset="images/design-med.jpeg" media="(max-width: 860px)">
+                <img src="images/design-large.jpg" alt="Colored Pencils">
+            </picture>
+            </div>
+          </div>
+
+        </div>
+        <div class="cards">
+          <section>
+            <div>
+              <img src="images/lawn-1.jpg" alt="Lawn scene" width="300" height="200">
+              <img src="images/bulb.png" alt="mask" width="300" height="200">
+            </div>
+            <p>This landscaping is so amazing. I feel like my lawn looks great now, and I will heep going back to these guys! I need my lawn looking immaculate!</p>
+          </section>
+          <section>
+            <img src="images/light-1.jpg" alt="Lights" width="300" height="200">
+            <img src="images/bulb.png" alt="mask" width="300" height="200">
+            <p>I love the job these guys did with the lighting. I can't stand it when it is dark. So I enjoy having these lights!</p>
+          </section>
+          <section>
+            <div>
+              <img src="images/lawn-2.jpg" alt="Lawn scene" width="300" height="200">
+              <img src="images/bulb.png" alt="mask" width="300" height="200">
+            </div>
+            <p>This landscaping is so amazing. I feel like my lawn looks great now, and I will heep going back to these guys! I need my lawn looking immaculate!</p>
+          </section>
+          <section>
+            <img src="images/light-2.jpg" alt="Lights" width="300" height="200">
+            <p>I love the job these guys did with the lighting. I can't stand it when it is dark. So I enjoy having these lights!</p>
+          </section>
+        </div>
+        <div class="shapes">
+          <section>
+            <img src="images/lawn-3.jpg" alt="Lawn scene" width="300" height="200">
+            <p>This landscaping is so amazing. I feel like my lawn looks great now, and I will heep going back to these guys!</p>
+          </section>
+          <section>
+            <img src="images/light-3.jpg" alt="Lights" width="300" height="200">
+            <p>I love the job these guys did with the lighting. I can't stand it when it is dark. So I enjoy having these lights!</p>
+          </section>
+        </div>
       </main>
     </div>
     <div id="footerWrapper">
@@ -60,6 +137,7 @@
         <p>© <span id="year">2024</span> • Glen Meredith</p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
