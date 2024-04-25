@@ -455,9 +455,12 @@ footer p {
     display: flex;
     margin-left: 2%;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding-left: 0;
   }
   nav ul li {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
+    width: 10rem;
   }
   nav ul li a {
     display: block;
@@ -465,22 +468,51 @@ footer p {
     padding: 0.9rem 1.2rem;
     color: white;
     text-decoration: none;
+    transition: background 0.3s ease-out;
   }
   nav ul li a:hover {
-    background-color: #1F2041;
+    background-color: #7a6aad;
   }
   nav ul li a:active {
     background-color: white;
     color: #1F2041;
   }
-  nav ul li.active {
-    color: white;
+  nav ul li.active a {
+    background-color: white;
     color: #1F2041;
+  }
+  #primaryNav .parent > a:after {
+    content: "▼";
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+  }
+  ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #201b30;
+    border: none;
+    width: 10rem;
+    position: absolute;
+    left: -999rem;
+  }
+  ul li ul li {
+    border-right: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+    z-index: 99;
   }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
   }
 }
