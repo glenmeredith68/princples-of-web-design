@@ -2,3 +2,28 @@ header, nav, main, footer {
   max-width: 60rem;
   margin: auto;
 }
+
+
+.ham {
+  display: none;
+}
+
+nav {
+  position: static;
+  transform: translateX(0);
+  width: auto;
+  border: none;
+  div {
+    display: none;
+  }
+  display: flex;
+  flex-direction: row;
+  a {
+    border: 0;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.2);
+    &:last-child{
+      border: none;
+    }
+  }
+}

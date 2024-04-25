@@ -329,19 +329,25 @@ body {
   height: 100%;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #2F4858;
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: rgb(100, 73, 73);
+  background-color: #33658A;
+  color: #2F4858;
 }
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 16px;
   gap: 8px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 header h1 {
   font-family: "Young Serif", serif;
@@ -349,15 +355,51 @@ header h1 {
   font-size: 1.2rem;
   font-weight: 400;
 }
+header button {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  align-self: start;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  text-align: right;
+  color: white;
+}
 
-#navWrapper {
-  background-color: thistle;
+.pageWrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.moveOver > .content {
+  transform: translateX(-180px);
+}
+
+.content {
+  transition: transform 400ms ease-out;
 }
 
 nav {
+  background-color: #86BBD8;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+}
+nav div {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  background-color: #86BBD8;
+  color: white;
 }
 nav a {
   flex: 1;
@@ -365,17 +407,20 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: #2F4858;
 }
 nav a:hover {
-  color: green;
+  color: white;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #2F4858;
+  color: white;
 }
 
 #footerWrapper {
-  background-color: thistle;
+  background-color: #33658A;
 }
 
 footer {
@@ -399,5 +444,27 @@ footer p {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  .ham {
+    display: none;
+  }
+  nav {
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+  nav div {
+    display: none;
+  }
+  nav a {
+    border: 0;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  nav a:last-child {
+    border: none;
   }
 }
