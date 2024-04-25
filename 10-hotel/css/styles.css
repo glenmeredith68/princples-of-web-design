@@ -421,7 +421,7 @@ nav a.active {
 }
 
 main {
-  margin: 0 3%;
+  margin: 2rem 3%;
 }
 
 .cards {
@@ -516,7 +516,7 @@ footer p {
     border: none;
   }
   main {
-    margin: 0 2%;
+    margin: 2rem 2%;
   }
   .cards {
     display: grid;
