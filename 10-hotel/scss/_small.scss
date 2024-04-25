@@ -41,6 +41,7 @@ header {
     margin: 0;
     font-size: 1.2rem;
     font-weight: $normalWeight;
+    color: white;
   }
   button {
     width: 48px;
@@ -110,6 +111,54 @@ nav {
     color: white;
   }
 }
+
+main {
+  margin: 0 3%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $gutter;
+}
+
+// cards grid stuff 
+section {
+  border-radius: 6px;
+  &:hover {box-shadow: 2px 2px 5px;}
+  background-color: $secondaryColor;
+  padding: .5rem;
+
+
+  display: grid;
+  gap: .5rem;
+  grid-template-areas: 
+    'name'
+    'photo'
+    'address'
+    'phone';
+
+    h2 {
+      grid-area: name;
+margin: 0;
+    }
+    img {
+      border-radius: 6px;
+      grid-area: photo;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    address {
+      grid-area: address;
+    }
+    a {
+      grid-area: phone;
+      text-decoration: none;
+      color: $fontColor;
+    }
+}
+
 
 
 // begin the footer

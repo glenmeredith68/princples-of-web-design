@@ -354,6 +354,7 @@ header h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 400;
+  color: white;
 }
 header button {
   width: 48px;
@@ -419,6 +420,47 @@ nav a.active {
   color: white;
 }
 
+main {
+  margin: 0 3%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+section {
+  border-radius: 6px;
+  background-color: #86BBD8;
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "name" "photo" "address" "phone";
+}
+section:hover {
+  box-shadow: 2px 2px 5px;
+}
+section h2 {
+  grid-area: name;
+  margin: 0;
+}
+section img {
+  border-radius: 6px;
+  grid-area: photo;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section address {
+  grid-area: address;
+}
+section a {
+  grid-area: phone;
+  text-decoration: none;
+  color: #2F4858;
+}
+
 #footerWrapper {
   background-color: #33658A;
 }
@@ -439,10 +481,16 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  section {
+    grid-template-areas: "photo name" "photo address" "photo phone";
+    grid-template-columns: 250px auto;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 54.5rem) {
   header, nav, main, footer {
-    max-width: 60rem;
+    max-width: 70rem;
     margin: auto;
   }
   .ham {
@@ -466,5 +514,20 @@ footer p {
   }
   nav a:last-child {
     border: none;
+  }
+  main {
+    margin: 0 2%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  section {
+    transition: transform 1s ease;
+  }
+  section:hover {
+    transform: scale(1.05);
+    z-index: 99;
   }
 }

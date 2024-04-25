@@ -1,5 +1,5 @@
 header, nav, main, footer {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: auto;
 }
 
@@ -25,5 +25,19 @@ nav {
     &:last-child{
       border: none;
     }
+  }
+}
+main {
+  margin: 0 2%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gutter;
+}
+section {transition: transform 1s ease;
+  &:hover {
+    transform: scale(1.05);
+    z-index: 99;
   }
 }

@@ -4,3 +4,12 @@ header {
         font-size: 2rem;
     }
 }
+
+section{
+    grid-template-areas: 
+    'photo name'
+    'photo address'
+    'photo phone';
+    grid-template-columns: 250px auto;
+    column-gap: .5rem;
+}
