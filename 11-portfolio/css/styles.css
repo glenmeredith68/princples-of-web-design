@@ -329,12 +329,13 @@ body {
   height: 100%;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #BCBDC0;
+  background-color: #565857;
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: rgb(100, 73, 73);
+  background-color: #565857;
+  color: #BCBDC0;
 }
 
 header {
@@ -351,7 +352,7 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: thistle;
+  background-color: #734B5E;
 }
 
 nav {
@@ -365,17 +366,21 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 nav a:hover {
-  color: green;
+  color: #565857;
 }
 nav a.active {
-  background-color: gainsboro;
+  background-color: #BCBDC0;
+}
+
+section {
+  height: 100vh;
 }
 
 #footerWrapper {
-  background-color: thistle;
+  background-color: #565857;
 }
 
 footer {

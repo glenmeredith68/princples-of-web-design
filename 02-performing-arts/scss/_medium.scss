@@ -8,3 +8,10 @@ header {
 .cards {
     gap:2rem;
 }
+
+nav {
+    flex-direction: row;
+ a {
+    max-width: fit-content;
+ }
+}

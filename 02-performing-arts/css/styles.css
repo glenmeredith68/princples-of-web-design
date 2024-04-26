@@ -359,6 +359,7 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 nav a {
   flex: 1;
@@ -370,6 +371,7 @@ nav a {
 }
 nav a:hover {
   background-color: gainsboro;
+  border-radius: 6px;
 }
 nav a.active {
   background-color: #B8D8D8;
@@ -437,6 +439,13 @@ footer p {
   }
   .cards {
     gap: 2rem;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 @media only screen and (min-width: 60rem) {
