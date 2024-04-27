@@ -326,7 +326,6 @@ html {
 }
 
 body {
-  height: 100%;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
   color: #BCBDC0;
@@ -353,9 +352,12 @@ header h1 {
 
 #navWrapper {
   background-color: #734B5E;
+  position: sticky;
+  top: 0;
 }
 
 nav {
+  max-width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -368,11 +370,17 @@ nav a {
   text-decoration: none;
   color: white;
 }
+nav a img {
+  width: 25px;
+}
+nav a span {
+  display: none;
+}
 nav a:hover {
-  color: #565857;
+  background-color: #925f77;
 }
 nav a.active {
-  background-color: #BCBDC0;
+  background-color: #543745;
 }
 
 section {
@@ -399,10 +407,29 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  nav a img {
+    display: none;
+  }
+  nav a span {
+    display: block;
+  }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
-    max-width: 60rem;
-    margin: auto;
+  body {
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
+  #navWrapper {
+    grid-row: 1/span 3;
+    position: relative;
+  }
+  nav {
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+  }
+  nav a {
+    flex: none;
   }
 }

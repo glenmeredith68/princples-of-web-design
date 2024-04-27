@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  height: 100%;
   font-family: $bodyFont;
   font-weight: $normalWeight;
   color: $fontColor;
@@ -41,8 +40,11 @@ header {
 
 #navWrapper {
   background-color: $secondaryColor;
+  position: sticky;
+  top: 0;
 }
 nav {
+  max-width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -54,13 +56,19 @@ nav {
     padding: 0.75rem;
     text-decoration: none;
     color: white;
+img{
+  width: 25px;}
+
+  span {
+    display: none;
+  }
 
     &:hover {
-      color: $primaryColor;
+      background-color: lighten($secondaryColor, 10%);
     }
   }
   a.active {
-    background-color: $fontColor;
+    background-color: darken($secondaryColor, 10%);
   }
 }
 

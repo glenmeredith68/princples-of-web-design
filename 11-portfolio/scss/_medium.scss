@@ -4,3 +4,10 @@ header {
         font-size: 2rem;
     }
 }
+
+nav a {
+    img {
+        display: none;
+    }
+    span{display: block;}
+}
