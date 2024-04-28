@@ -16,7 +16,11 @@ flex-direction: column;
 position: fixed;
 height: 100vh;
 justify-content: center;
+gap: .5rem;
+width: 250px;
 }
 nav a {
   flex: none;
+width: 100%;
+text-align: right;
 }
