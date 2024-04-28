@@ -386,6 +386,11 @@ nav a.active {
 
 section {
   min-height: 100vh;
+  padding: 3rem;
+}
+section img {
+  width: 100%;
+  height: auto;
 }
 
 #footerWrapper {
