@@ -318,6 +318,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /*---- apply a natural box layout model to all elements -------*/
@@ -384,7 +385,7 @@ nav a.active {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #footerWrapper {
@@ -393,9 +394,16 @@ section {
 
 footer {
   padding: 0.5rem 16px;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 footer p {
   margin: 0;
+  margin-top: 16px;
   font-weight: 300;
   text-align: center;
 }

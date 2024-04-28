@@ -4,6 +4,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /*---- apply a natural box layout model to all elements -------*/
@@ -74,7 +75,7 @@ img{
 
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -84,9 +85,15 @@ section {
 }
 footer {
     padding: .5rem $gutter;
-
+    text-align: center;
+div{
+  display: flex;
+  gap: $gutter;
+  justify-content: center;
+}
     p {
         margin: 0;
+        margin-top: $gutter;
         font-weight: $lightWeight;
         text-align: center;
     }
